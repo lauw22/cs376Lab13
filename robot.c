@@ -33,12 +33,14 @@ void robotPrintAscii(void)
   int i;
   char* blank = "                              ";
   blank = blank +30;
+	for(int i = 0; i < 3; i++){
   printf("\n\n"
 	 "UWR: Unidentified Wheeled Robot\n"
 	 "%s    i_i    \n"
 	 "%s   [@_@]   \n"
 	 "%s  /|___|\\ \n"
-	 "%s   d   b   \n",blank, blank, blank, blank);
+	 "%s   d   b   \n",blank*i, blank*i, blank*i, blank*i);
+	}
 
   blank = blank - 10;
 }
